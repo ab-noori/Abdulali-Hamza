@@ -1,1 +1,62 @@
-"Hello World! We are software developers"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking your time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label">
+        <span class="name">Name</span>
+        <input id="name" type="text" gplaceholder="Enter your name" required />
+      </label>
+      <label id="email-label">
+        Email
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </label>
+      <label id="number-label">
+        Age
+        <input id="number" type="number" min="0" max="100" placeholder="Age" />
+      </label>
+      <label id="role">
+        Which options best describes your role?
+        <select id="dropdown">
+          <option>Student</option>
+          <option>Teacher</option>
+        </select>
+      </label>
+      <input type="radio" name="radio" value="Definitely" /><label
+        >Definitely</label
+      >
+      <input type="radio" name="radio" value="Maybe" />
+      <label>Maybe</label>
+      <input type="radio" name="radio" value="Not sure" /><label
+        >Not sure</label
+      >
+
+      <input type="checkbox" value="Front-end projects" /><label
+        >Front end projects</label
+      >
+      <input type="checkbox" value="Back-end projects" /><label
+        >Back-end projects</label
+      >
+      <input type="checkbox" value="Data visualizations" /><label
+        >Data visualizations</label
+      >
+      <input type="checkbox" value="Challenges" /><label>Challenges</label>
+      <textarea placeholder="Additional comments"></textarea>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
